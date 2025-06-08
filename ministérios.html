@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ministérios | Igreja Batista</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header role="banner">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <div class="logo" tabindex="0" aria-label="Logo Igreja Batista Evangélica">Igreja Batista</div>
+      </a>
+      <nav role="navigation" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+          <!-- CORREÇÃO APLICADA AQUI -->
+          <li><a href="ministerios.html" class="ativo">Ministérios</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li>
+            <button class="btn-theme-toggle" id="theme-toggle" aria-label="Alternar modo claro e escuro" title="Alternar modo claro e escuro">🌙</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="ministries" role="region" aria-labelledby="ministries-title">
+      <h2 id="ministries-title" class="section-title">Ministérios</h2>
+      <div class="card-grid">
+        <article tabindex="0" class="card" aria-label="Ministério de Jovens">
+          <h3>Ministério de Jovens</h3>
+          <p>Espaço para os jovens crescerem na fé, com encontros semanais e atividades especiais.</p>
+        </article>
+        <article tabindex="0" class="card" aria-label="Ministério de Louvor">
+          <h3>Ministério de Louvor</h3>
+          <p>Guia nosso culto com música e adoração, elevando nossos corações a Deus.</p>
+        </article>
+        <article tabindex="0" class="card" aria-label="Ministério de Ação Social">
+          <h3>Ministério de Ação Social</h3>
+          <p>Projeto de ajuda comunitária, oferecendo suporte aos necessitados através do amor cristão.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>© 2024 Igreja Batista Evangélica - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
